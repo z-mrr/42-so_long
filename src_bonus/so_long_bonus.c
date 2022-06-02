@@ -6,7 +6,7 @@
 /*   By: jdias-mo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/12 10:24:08 by jdias-mo          #+#    #+#             */
-/*   Updated: 2022/05/25 17:53:01 by jdias-mo         ###   ########.fr       */
+/*   Updated: 2022/06/02 12:17:10 by jdias-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	check_file(char *file)
 		i++;
 	if (file[i] == 'r' && file[i - 1] == 'e'
 		&& file[i - 2] == 'b' && file[i - 3] == '.'
-		&& file[i - 4])
+		&& file[i - 4] && file[i - 4] != '/')
 		return (1);
 	else
 		return (0);
