@@ -6,7 +6,7 @@
 /*   By: jdias-mo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/15 17:41:37 by jdias-mo          #+#    #+#             */
-/*   Updated: 2022/06/01 16:14:35 by jdias-mo         ###   ########.fr       */
+/*   Updated: 2022/06/02 11:04:35 by jdias-mo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,7 @@ int	check_map_components(t_game *game)
 		}
 		i++;
 	}
-	if (!game->exit || !game->collect || !game->player)
+	if (!game->exit || !game->collect || game->player != 1)
 		return (0);
 	return (1);
 }
